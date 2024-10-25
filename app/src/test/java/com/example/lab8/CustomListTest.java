@@ -40,14 +40,14 @@ public class CustomListTest {
         assertEquals(list.getCount(),listSize + 1);
     }
 
-//    @Test
-//    public void testHasCity(){
-//        CustomList cityList = MockCustomList();
-//        City city = new City("Charlottetown", "Prince Edward Island");
-//        Assertions.assertFalse(cityList.hasCity(city));
-//        cityList.add(city);
-//        Assertions.assertTrue(cityList.hasCity(city));
-//    }
+    @Test
+    public void testHasCity(){
+        CustomList cityList = MockCustomList();
+        City city = new City("Charlottetown", "Prince Edward Island");
+        Assertions.assertFalse(cityList.hasCity(city));
+        cityList.add(city);
+        Assertions.assertTrue(cityList.hasCity(city));
+    }
 //
 //    @Test
 //    public void testDeleteCity(){
