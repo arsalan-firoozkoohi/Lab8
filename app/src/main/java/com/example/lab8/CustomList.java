@@ -55,5 +55,4 @@ public class CustomList extends ArrayAdapter<City> {
 
     
 
-
 }
