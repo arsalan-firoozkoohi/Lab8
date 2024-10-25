@@ -49,12 +49,12 @@ public class CustomListTest {
     }
 
     @Test
-    public void testDelete(){
+    public void testDeleteCity(){
         CustomList cityList = MockCustomList();
         City city = new City("Yellowknife", "Northwest Territories");
         cityList.add(city);
         assertTrue(cityList.hasCity(city));
-        cityList.delete(city);
+        cityList.deleteCity(city);
         assertFalse(cityList.hasCity(city));
     }
 }
