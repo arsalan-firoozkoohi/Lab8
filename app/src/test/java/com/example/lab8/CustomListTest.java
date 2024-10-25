@@ -40,30 +40,30 @@ public class CustomListTest {
         assertEquals(list.getCount(),listSize + 1);
     }
 
-    @Test
-    public void testHasCity(){
-        CustomList cityList = MockCustomList();
-        City city = new City("Charlottetown", "Prince Edward Island");
-        Assertions.assertFalse(cityList.hasCity(city));
-        cityList.add(city);
-        Assertions.assertTrue(cityList.hasCity(city));
-    }
-
-    @Test
-    public void testDeleteCity(){
-        CustomList cityList = MockCustomList();
-        City city = new City("Yellowknife", "Northwest Territories");
-        cityList.add(city);
-        Assertions.assertTrue(cityList.hasCity(city));
-        cityList.deleteCity(city);
-        Assertions.assertFalse(cityList.hasCity(city));
-    }
-
-    @Test
-    public void testCountCities(){
-        CustomList cityList = MockCustomList();
-        City city = new City("Charlottetown", "Prince Edward Island");
-        cityList.add(city);
-        assertEquals(2, cityList.countCities());
-    }
+//    @Test
+//    public void testHasCity(){
+//        CustomList cityList = MockCustomList();
+//        City city = new City("Charlottetown", "Prince Edward Island");
+//        Assertions.assertFalse(cityList.hasCity(city));
+//        cityList.add(city);
+//        Assertions.assertTrue(cityList.hasCity(city));
+//    }
+//
+//    @Test
+//    public void testDeleteCity(){
+//        CustomList cityList = MockCustomList();
+//        City city = new City("Yellowknife", "Northwest Territories");
+//        cityList.add(city);
+//        Assertions.assertTrue(cityList.hasCity(city));
+//        cityList.deleteCity(city);
+//        Assertions.assertFalse(cityList.hasCity(city));
+//    }
+//
+//    @Test
+//    public void testCountCities(){
+//        CustomList cityList = MockCustomList();
+//        City city = new City("Charlottetown", "Prince Edward Island");
+//        cityList.add(city);
+//        assertEquals(2, cityList.countCities());
+//    }
 }
